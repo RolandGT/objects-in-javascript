@@ -141,8 +141,8 @@ For example:
 
 ```javascript
 var book = {
-name: "JavaScript",
-year: 2019
+    name: "JavaScript",
+    year: 2019
 };
 ```
 
@@ -152,8 +152,8 @@ characters:
 
 ```javascript
 var book = {
-"name": "JavaScript",
-"year": 2019
+    "name": "JavaScript",
+    "year": 2019
 };
 ```
 
@@ -315,7 +315,7 @@ to true.
 ```javascript
 var found = new Boolean(false);
 if (found) {
-console.log("Found"); // this executes
+    console.log("Found"); // this executes
 }
 ```
 

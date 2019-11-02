@@ -9,10 +9,10 @@ this instead.
 
 ```javascript
 var person = {
-name: "Rol",
-sayName: function() {
-console.log(this.name);
-}
+    name: "Rol",
+    sayName: function() {
+        console.log(this.name);
+    }
 };
 person.sayName(); // outputs "Rol"
 ```
@@ -21,15 +21,15 @@ name of the variable or even reuse the function on different objects.
 
 ```javascript
 function sayNameForAll() {
-console.log(this.name);
+    console.log(this.name);
 }
 var person1 = {
-name: "Rol",
-sayName: sayNameForAll
+    name: "Rol",
+    sayName: sayNameForAll
 };
 var person2 = {
-name: "Ged",
-sayName: sayNameForAll
+    name: "Ged",
+    sayName: sayNameForAll
 };
 var name = "Tro";
 person1.sayName(); // outputs "Rol"
@@ -71,13 +71,13 @@ update sayNameForAll() to take a parameter:
 
 ```javascript
 function sayNameForAll(label) {
-console.log(label + ":" + this.name);
+    console.log(label + ":" + this.name);
 }
 var person1 = {
-name: "Rol"
+    name: "Rol"
 };
 var person2 = {
-name: "Ged"
+    name: "Ged"
 };
 var name = "Tro";
 sayNameForAll.call(this, "global"); // outputs "global:Tro"
@@ -110,13 +110,13 @@ shows the apply() method in action:
 
 ```javascript
 function sayNameForAll(label) {
-console.log(label + ":" + this.name);
+    console.log(label + ":" + this.name);
 }
 var person1 = {
-name: "Rol"
+    name: "Rol"
 };
 var person2 = {
-name: "Ged"
+    name: "Ged"
 };
 var name = "Tro";
 sayNameForAll.apply(this, ["global"]); // outputs "global:Tro"
@@ -143,13 +143,13 @@ sayNameForPerson2() binds this to person2 and binds the first parameter as
 
 ```javascript
 function sayNameForAll(label) {
-console.log(label + ":" + this.name);
+    console.log(label + ":" + this.name);
 }
 var person1 = {
-name: "Rol"
+    name: "Rol"
 };
 var person2 = {
-name: "Ged"
+    name: "Ged"
 };
 // create a function just for person1
 //1

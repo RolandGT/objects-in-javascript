@@ -27,7 +27,7 @@ of the function immediately following it.</li>
 
 ```javascript
 function add(num1, num2) {
-return num1 + num2;
+    return num1 + num2;
 }
 ```
 
@@ -38,7 +38,7 @@ referenced via a variable or property.</li>
 
 ```javascript
 var add = function(num1, num2) {
-return num1 + num2;
+    return num1 + num2;
 };
 ```
 
@@ -54,7 +54,7 @@ used in code without generating an error. For example:
 ```javascript
 var result = add(5, 5);
 function add(num1, num2) {
-return num1 + num2;
+    return num1 + num2;
 }
 ```
 
@@ -65,7 +65,7 @@ the top and actually executes the code as if it were written like this:
 ```javascript
 // how the JavaScript engine interprets the code
 function add(num1, num2) {
-return num1 + num2;
+    return num1 + num2;
 }
 var result = add(5, 5);
 ```
@@ -79,6 +79,6 @@ only through a variable. So this code causes an error:
 // error!
 var result = add(5, 5);
 var add = function(num1, num2) {
-return num1 + num2;
+    return num1 + num2;
 };
 ```
