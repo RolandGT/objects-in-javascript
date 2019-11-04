@@ -53,8 +53,8 @@ function sum() {
     i = 0,
     len = arguments.length;
     while (i < len) {
-    result += arguments[i];
-    i++;
+        result += arguments[i];
+        i++;
     }
     return result;
     }
